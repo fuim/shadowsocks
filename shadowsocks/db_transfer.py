@@ -93,6 +93,9 @@ class DbTransfer(object):
                 if row[1] + row[2] >= row[3]:
                     logging.info('db stop server at port [%s] reason: out bandwidth' % (row[0]))
                     ServerPool.get_instance().del_server(row[0])
+		elif row[5] == 0:
+		    logging.info('db stop server at port [%s] reason: disable' % (row[0]))
+		    ServerPool.get_instance().del_server(row[0])
 		if ServerPool.get_instance().tcp_servers_pool[row[0]]._config['password'] != row[4]:
 		    #password changed
 		    logging.info('db stop server at port [%s] reason: password changed' % (row[0]))
