@@ -1,9 +1,9 @@
 #Config
-MYSQL_HOST = 'mdss.mengsky.net'
+MYSQL_HOST = 'db.loacg.com'
 MYSQL_PORT = 3306
 MYSQL_USER = 'ss'
 MYSQL_PASS = 'ss'
-MYSQL_DB = 'shadowsocks'
+MYSQL_DB = 'sspanel'
 
 MANAGE_PASS = 'ss233333333'
 #if you want manage in other server you should set this value to global ip
