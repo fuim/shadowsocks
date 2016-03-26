@@ -1,0 +1,8 @@
+loaded collections.OrderedDict
+IPv6 support
+Traceback (most recent call last):
+  File "server.py", line 28, in <module>
+    import db_transfer
+  File "D:\open\github\shadowsocks\db_transfer.py", line 5, in <module>
+    import cymysql
+ImportError: No module named cymysql
